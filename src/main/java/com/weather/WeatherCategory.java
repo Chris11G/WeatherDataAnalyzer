@@ -104,9 +104,9 @@ public sealed interface WeatherCategory
     default String icon() {
         return switch (this) {
             case Hot h -> "🔥";
-            case Warm w -> "☀️";
+            case Warm w -> "☀";
             case Mild m -> "⛅";
-            case Cold c -> "❄️";
+            case Cold c -> "❄";
         };
     }
 

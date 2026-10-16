@@ -178,14 +178,17 @@
 
 /* ---------- report ---------- */
 .report {
-    -fx-font-family: "JetBrains Mono", "Consolas", "Menlo", monospace;
-    -fx-font-size: 13px;
+    -fx-font-family: "Consolas", "Menlo", "monospaced";
+    -fx-font-size: 14px;
+    -fx-control-inner-background: #0f1b2b;
+    -fx-text-fill: #e6eef8;
+    -fx-highlight-fill: #2f6fa8;
+    -fx-highlight-text-fill: white;
+    -fx-background-radius: 8;
 }
 .report .content {
     -fx-background-color: #0f1b2b;
-}
-.report .text {
-    -fx-fill: #d6e4f5;
+    -fx-padding: 12;
 }
 
 /* ---------- status bar ---------- */

@@ -41,7 +41,7 @@ The whole project is written **without a single explicit class**. Every type is 
 
 ### GUI (JavaFX + CSS) — extra credit
 - Gradient header, stat **cards** that update live when you change the month or threshold
-- **Data tab:** sortable table, rows coloured by category (🔥 Hot · ☀️ Warm · ⛅ Mild · ❄️ Cold), plus a "only days above threshold" filter
+- **Data tab:** sortable table, rows coloured by category (🔥 Hot · ☀ Warm · ⛅ Mild · ❄ Cold), plus a "only days above threshold" filter
 - **Charts tab:** bar chart of monthly averages (bars coloured by category), pie chart of category counts, and a daily temperature line with a dashed threshold line
 - **Report tab:** the text-block report in a dark monospace panel with a *Copy report* button
 - **Open CSV…** button and **drag-and-drop** of any CSV file onto the window
