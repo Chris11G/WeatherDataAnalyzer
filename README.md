@@ -5,7 +5,7 @@ A JavaFX desktop application that reads daily weather observations from a CSV fi
 The whole project is written **without a single explicit class**. Every type is a `record` or an `interface`, and all behaviour is expressed with static methods and lambdas.
 
 > **Course:** CSC311 – Advanced Programming · Module 6 Assignment
-> **Author:** _Your Name_ · **Date:** October 2026
+> **Author:** Christopher Gonzalez · **Date:** October 2026
 
 ---
 
