@@ -1,0 +1,199 @@
+/* ============================================================
+   Weather Data Analyzer — JavaFX stylesheet
+   ============================================================ */
+
+.root {
+    -hot:  #e4572e;
+    -warm: #f3a712;
+    -mild: #29a37a;
+    -cold: #3b82c4;
+    -ink:  #1f2a37;
+    -muted: #6b7785;
+    -surface: #ffffff;
+    -canvas: #eef2f7;
+    -fx-font-family: "Segoe UI", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 13px;
+    -fx-text-fill: -ink;
+}
+
+.root-pane {
+    -fx-background-color: -canvas;
+}
+
+/* ---------- header ---------- */
+.header {
+    -fx-padding: 18 24;
+    -fx-background-color: linear-gradient(to right, #1e3a5f, #2f6fa8 60%, #4aa3df);
+}
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+.subtitle {
+    -fx-text-fill: rgba(255, 255, 255, 0.75);
+    -fx-font-size: 12px;
+}
+.file-label {
+    -fx-text-fill: white;
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 999;
+    -fx-padding: 5 12;
+}
+
+.primary-button {
+    -fx-background-color: white;
+    -fx-text-fill: #1e3a5f;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+.primary-button:hover {
+    -fx-background-color: #e3efff;
+}
+
+/* ---------- toolbar ---------- */
+.toolbar {
+    -fx-padding: 10 24;
+    -fx-background-color: -surface;
+    -fx-border-color: transparent transparent #d9e0e8 transparent;
+}
+.toolbar-label {
+    -fx-text-fill: -muted;
+    -fx-font-weight: bold;
+}
+.combo-box, .spinner, .button {
+    -fx-background-radius: 6;
+}
+
+/* ---------- cards ---------- */
+.card {
+    -fx-background-color: -surface;
+    -fx-background-radius: 12;
+    -fx-padding: 14 18;
+    -fx-effect: dropshadow(gaussian, rgba(20, 40, 70, 0.10), 12, 0, 0, 3);
+    -fx-border-color: transparent transparent transparent #2f6fa8;
+    -fx-border-width: 0 0 0 5;
+    -fx-border-radius: 12;
+}
+.card-above { -fx-border-color: transparent transparent transparent -hot; }
+.card-rain  { -fx-border-color: transparent transparent transparent -cold; }
+.card-range { -fx-border-color: transparent transparent transparent -mild; }
+
+.card-title {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -muted;
+}
+.card-value {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -ink;
+}
+.card-value.cat-hot  { -fx-text-fill: -hot; }
+.card-value.cat-warm { -fx-text-fill: -warm; }
+.card-value.cat-mild { -fx-text-fill: -mild; }
+.card-value.cat-cold { -fx-text-fill: -cold; }
+.card-caption {
+    -fx-text-fill: -muted;
+}
+
+/* ---------- tabs ---------- */
+.tab-pane > .tab-header-area > .headers-region > .tab {
+    -fx-background-color: transparent;
+    -fx-padding: 6 16;
+}
+.tab-pane > .tab-header-area > .headers-region > .tab:selected {
+    -fx-background-color: -surface;
+    -fx-background-radius: 8 8 0 0;
+}
+.tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color: transparent;
+}
+.tab-pane > .tab-content-area {
+    -fx-background-color: -surface;
+    -fx-background-radius: 0 12 12 12;
+}
+.tab .tab-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: -muted;
+}
+.tab:selected .tab-label {
+    -fx-text-fill: #1e3a5f;
+}
+
+/* ---------- table ---------- */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.table-view .column-header-background {
+    -fx-background-color: #f5f7fa;
+}
+.table-view .column-header .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: -muted;
+}
+.table-row-cell {
+    -fx-border-color: transparent transparent #eef1f5 transparent;
+}
+.table-row-cell.cat-hot  { -fx-background-color: #fde8e2; }
+.table-row-cell.cat-warm { -fx-background-color: #fef4dd; }
+.table-row-cell.cat-mild { -fx-background-color: #e3f5ee; }
+.table-row-cell.cat-cold { -fx-background-color: #e2eef9; }
+.table-row-cell:selected {
+    -fx-background-color: #2f6fa8;
+}
+.table-row-cell:selected .text {
+    -fx-fill: white;
+}
+
+/* ---------- charts ---------- */
+.chart {
+    -fx-background-color: #fafbfd;
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+}
+.chart-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: -ink;
+}
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+.chart-bar.cat-hot  { -fx-bar-fill: -hot; }
+.chart-bar.cat-warm { -fx-bar-fill: -warm; }
+.chart-bar.cat-mild { -fx-bar-fill: -mild; }
+.chart-bar.cat-cold { -fx-bar-fill: -cold; }
+.chart-bar { -fx-background-radius: 4 4 0 0; }
+
+.chart-pie.cat-hot  { -fx-pie-color: -hot; }
+.chart-pie.cat-warm { -fx-pie-color: -warm; }
+.chart-pie.cat-mild { -fx-pie-color: -mild; }
+.chart-pie.cat-cold { -fx-pie-color: -cold; }
+
+.chart-series-line.temperature-line { -fx-stroke: #2f6fa8; -fx-stroke-width: 1.6px; }
+.chart-series-line.threshold-line   { -fx-stroke: -hot; -fx-stroke-width: 2px; -fx-stroke-dash-array: 8 6; }
+
+/* ---------- report ---------- */
+.report {
+    -fx-font-family: "JetBrains Mono", "Consolas", "Menlo", monospace;
+    -fx-font-size: 13px;
+}
+.report .content {
+    -fx-background-color: #0f1b2b;
+}
+.report .text {
+    -fx-fill: #d6e4f5;
+}
+
+/* ---------- status bar ---------- */
+.status {
+    -fx-padding: 6 24;
+    -fx-text-fill: -muted;
+    -fx-font-size: 12px;
+    -fx-background-color: -surface;
+    -fx-border-color: #d9e0e8 transparent transparent transparent;
+    -fx-max-width: infinity;
+}
